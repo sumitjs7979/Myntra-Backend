@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon src/server"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "\"First Backend project",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahulK2699/Backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahulK2699/Backend/issues"
+  },
+  "homepage": "https://github.com/RahulK2699/Backend#readme"
+}
