@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/product_style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="homepage"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmmcaLWUtIoeiCAjZIl4sP523Ma23rbm5_TvWLbxGmkDnePtvIy8wsg8ktiMGAUvt1q6c&usqp=CAU" width="42px" height="48px"></a>
+        </div>
+       <div class="navlink">
+           <a href="">MEN</a>
+           <a href="">WOMEN</a>
+           <a href="">KIDS</a>
+           <a href="">HOME LIVING</a>
+           <a href="">DISCOVER</a>
+       </div>
+       <div class="inputbox">
+           <input type="text" placeholder="Search for products, brand and more">
+       </div>
+       <div class="navprofile">
+        <a href="wishlist">Wishlist</a>
+        <a href="">Bag</a>
+       </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div id="main-cat-box">
+        <p>Home / clothing / <span>Men T-Shirts</span></p>
+        <p><span>Men T-Shirts -</span> 56747 items</p>
+        
+        <h4>FILTERS</h4>
+        <div id="cat-1">
+            <p>CATEGORIES </p>
+            <input type="checkbox"></input>
+            <label>T-Shirt<span>(56020)</span></label>
+            <div></div>
+            <input type="checkbox"></input>
+            <label>Lounge T-Shirts<span>(712)</span></label>  
+        </div>
+        <div id="cat-2">
+            <p>BRAND </p>
+            <input type="checkbox" id="roadster" value="roadster" onclick="showRoadster()"></input>
+            <label>Roadster<span>(3159)</span></label>
+            <div></div>
+            <input type="checkbox"id="quancious" value="QUANCIOUS" onclick="showQuancious()"></input>
+            <label>QUANCIOUS<span>(1533)</span></label>
+            <div></div>
+            <input type="checkbox"id="wrogn" value="WROGN" onclick="showWrogn()"></input>
+            <label>WROGN<span>(1357)</span></label>
+            <div></div>
+            <input type="checkbox"id="puma" value="Puma" onclick="showPuma()"></input>
+            <label>Puma<span>(1120)</span></label>
+            <div></div>
+            <input type="checkbox"id="freeauthority" value="FreeAuthority" onclick="showFreeAuthority()"></input>
+            <label>Free Authority<span>(1106)</span></label>
+            <div></div>
+            <input type="checkbox"id="huetrap" value="Huetrap" onclick="showHuetrap()"></input>
+            <label>Huetrap<span>(872)</span></label>
+            <p id="p1" style="font-size: 14px;"> +495 more</p>  
+        </div>
+        <div id="cat-3">
+            <p>PRICE</p>
+            <input type="checkbox"></input>
+            <label>Rs. 99 to Rs. 2574<span>(55735)</span></label>
+            <div></div>
+            <input type="checkbox"></input>
+            <label>Rs. 2574 to Rs. 5049<span>(937)</span></label>
+            <div></div>
+            <input type="checkbox"></input>
+            <label>Rs. 5049 to Rs. 7524<span>(56)</span></label>
+            <div></div>
+            <input type="checkbox"></input>
+            <label>Rs. 7524 to Rs. 9999<span>(3)</span></label>
+        </div>
+    </div>
+    <div id="sorting-option">
+       <button onclick="sortLowToHigh()">Price Low To High</button>
+       <button onclick="sortHighToLow()">Price High To Low</button>
+       <button onclick="sortByBrand()">Brand</button>
+       <button onclick="sortByType()">Type</button>
+    </div>
+    <div id="data">
+    </div>
+</body>
+</html>
+<script src="js/product.js"></script>
+

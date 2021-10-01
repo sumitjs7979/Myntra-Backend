@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header">
+            <div class="myntralogo">
+                <a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmmcaLWUtIoeiCAjZIl4sP523Ma23rbm5_TvWLbxGmkDnePtvIy8wsg8ktiMGAUvt1q6c&usqp=CAU" width="42px" height="48px"></a>
+            </div>
+            <div class="headcont">
+                <ol class="headerol">
+                    <li>BAG</li>
+                    <li class="dash-border"></li>
+                    <li>ADDRESS</li>
+                    <li class="dash-border"></li>
+                    <li style="color:green; text-decoration:underline;">PAYMENT</li>
+                </ol>
+            </div>
+            <div class="secure">
+                <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png">
+                <p>100% SECURE</p>
+            </div>
+        </div>
+        <div class="leftright_container">
+            <div class="left-bar">
+                <div class="avail-cont">
+                    <div class="avail-off">
+                        <!-- <img class="offer-icon" src=""/> -->
+                        <div class="offer-title">Available Offers</div>
+                        <span>10% Instant Discount with Axis Bank Credit and Debit Cards on a minimum spend of Rs
+                            2,500.</span>
+                        <div class="showmore">Show More</div>
+                    </div>
+                </div>
+                <div class="item-bag">
+                    <div>Choose payment mode</div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop_item_left">
+                        <div style="background-color: #ff3f6c;">CREDIT/DEBIT CARD</div>
+                        <div>CASH ON DELIVEY(CASH/CARD/UPI)</div>
+                        <div>SAVED PAYMENT OPTIONS</div>
+                        <div>PHONE PAY/GOOGLE PAY/BHIM UPI</div>
+                        <div>PAYTM/PAYZAPP/WALLETS</div>
+                        <div>NET BANKING</div>
+                        <div>EMI/PAY LATER</div>
+                    </div>
+                    <div class="shop_item_right">
+                        <div>CREDIT/DEBIT CARD</div>
+                        <div><input id="card_number" type="number" placeholder="Card Number"/></div>
+                        <div><input id="b" type="text" placeholder="Name on card"/></div>
+                        <div class="div_card_expiry">
+                            <div><input id="c" style="width:200px; height:40px; margin-left:-15px" type="number" placeholder="Valid Thru(YY)"/></div>
+                            <div><input id="d" style="height: 40px;" type="number" placeholder="CVV"/></div>
+                        </div>
+                        <div>Save this card for faster payments </div>
+                        <div ><Button onclick="checkCard()">PAY NOW</Button></div>
+                    </div>   
+                </div>
+                <div class="gift_card_div">
+                    <div>Have a gift card?</div>
+                    <div><button>APPLY GIFT CARD</button></div>
+                </div>
+            </div>
+            <div class="right-bar">
+                <div>
+                    <div class="price-infocont">
+                        <div class="price-para">PRICE DETAILS(1 items)</div>
+                        <div></div>
+                        <div>Total MRP</div>
+                        <div>Rs 1,249</div>
+                        <div>Discount on MRP</div>
+                        <div>-Rs 687</div>
+                        <div>Coupon Discount</div>
+                        <div style="font-size: 16px;color: green;">-Rs 228</div>
+                        <div class="conv-fee">Convenience Fee<div style="color: rgb(245, 97, 208);font-weight: bold;font-size: 15px;">Know More</div></div>
+                        <div style="color: green;font-size: 14px;margin-left: 10px;">Free</div>
+                    </div>
+                    <div class="total">
+                        <div>Total Amount</div>
+                        <div>Rs 334</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="js/payment.js"></script>
