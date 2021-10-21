@@ -6,11 +6,15 @@ const Product = require('../models/product.model');
 //-----------------------------------------------CRUD apis---------------------------------------------------------
 
 //get all product data
-router.get("",async (req,res) => {
-    const products = await Product.find().lean().exec();
+router.get("", async (req, res) => {
 
-    return res.status(200).send({products});
-});
+    res.render("product",{})
+})
+// router.get("",async (req,res) => {
+//     const products = await Product.find().lean().exec();
+
+//     return res.status(200).send({products});
+// });
 
 
 //get data sort by brand
