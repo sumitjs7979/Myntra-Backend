@@ -12,7 +12,7 @@ app.use(express.static("public"));
 const productController = require('./controllers/product.controller');
  const addressController = require('./controllers/address.controller');
 //  app.use("/homepage", homeController)
-app.get("/homepage", async (req, res) => {
+app.get("/", async (req, res) => {
 
     res.render("homepage",{})
 })

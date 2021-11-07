@@ -1,24 +1,24 @@
-obj=[{
-    card_Number:1234567890,
-    card_holder_name:'saurabh',
-    valid_year:2025,
-    cvv:1234
-},
-{
-    card_Number:1234567891,
-    card_holder_name:'lucky',
-    valid_year:2024,
-    cvv:1235
-},
-]
+// obj=[{
+//     card_Number:1234567890,
+//     card_holder_name:'saurabh',
+//     valid_year:2025,
+//     cvv:1234
+// },
+// {
+//     card_Number:1234567891,
+//     card_holder_name:'lucky',
+//     valid_year:2024,
+//     cvv:1235
+// },
+// ]
 
-const obj_json = JSON.stringify(obj);
+// const obj_json = JSON.stringify(obj);
     
-localStorage.setItem("myObj",obj_json);
+// localStorage.setItem("myObj",obj_json);
 
-let myObj = localStorage.getItem("myObj");
+// let myObj = localStorage.getItem("myObj");
 
-myObj =JSON.parse(myObj);
+// myObj =JSON.parse(myObj);
 
 function checkCard(){
     var card_number_count=0;
@@ -29,21 +29,21 @@ function checkCard(){
     var bb =document.getElementById('b').value;
     var cc=document.getElementById('c').value;
     var dd=document.getElementById('d').value;
-        myObj.forEach(function(product){
-            console.log(product.card_Number+ "   "+product.card_holder_name+"  "+product.valid_year+" "+product.cvv)
-            if(product.card_Number==aa){
+        // myObj.forEach(function(product){
+        //     console.log(product.card_Number+ "   "+product.card_holder_name+"  "+product.valid_year+" "+product.cvv)
+            if(aa.length=== 16){
                 card_number_count++
             }
-            if(product.card_holder_name==bb){
+            if(bb.length>0){
                 card_holder_name_count++
             }
-            if(product.valid_year>=cc){
+            if(cc.length===4){
                 valid_year_count++;
             }
-            if(product.cvv==dd){
+            if(dd.length=== 3){
                 cvv_count++;
             }
-        })
+        
     if(card_number_count>0){
         if(card_holder_name_count>0){
             if(valid_year_count>0){
